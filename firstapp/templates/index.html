@@ -6,8 +6,8 @@
     <title>Reservation</title>
   </head>
   <body>
-    <form action="" method="POST">
-      {{% csrf_token }} {{form.as_p}}
+    <form method="POST">
+      {% csrf_token %} {{form.as_p}}
       <button type="submit">Save</button>
     </form>
   </body>
